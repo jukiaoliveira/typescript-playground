@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",         // Versão moderna do JavaScript
+      "lib": ["ES2020", "DOM"],    // Bibliotecas que o TS vai "conhecer" (inclui 'Iterable')
+      "skipLibCheck": true,     // **A MÁGICA**: Ignora os erros de 'node_modules'
+      "module": "CommonJS",
+      "strict": true              // Força você a tipar tudo (ótimo para aprender)
+    },
+    "include": [
+      "*.ts" // Diz para o TS compilar todos os arquivos '.ts' nesta pasta
+    ]
+  }
