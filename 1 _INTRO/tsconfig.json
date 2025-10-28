@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",        // Define uma versão moderna do JS que inclui 'Iterable'
+      "lib": ["ES2020", "DOM"],   // Carrega as bibliotecas do JS moderno e do navegador
+      "skipLibCheck": true,    // **A MÁGICA ESTÁ AQUI**: Pula a verificação de erros em 'node_modules'
+      "module": "CommonJS",      // Um formato de módulo padrão
+      "strict": true             // Boas práticas
+    },
+    "include": [
+      "index.ts" // Diz para o TS compilar apenas este arquivo
+    ]
+  }
+  
