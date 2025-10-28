@@ -14,3 +14,18 @@ console.log(typeof y)
 console.log(y)
 
 console.log(y.toPrecision(3))
+
+// 2 - strings
+const fisrtName: string = "Julia"
+
+console.log(fisrtName.toUpperCase())
+
+let fullName: string
+
+const lastName: string = "Oliveira"
+
+fullName = fisrtName + " " + lastName
+
+console.log(fullName)
+
+console.log(typeof fullName)
