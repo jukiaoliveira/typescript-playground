@@ -16,3 +16,7 @@ const lastName = "Oliveira";
 fullName = fisrtName + " " + lastName;
 console.log(fullName);
 console.log(typeof fullName);
+// 3 - boolean
+let a = false;
+console.log(a);
+console.log(typeof a);
