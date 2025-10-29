@@ -35,3 +35,11 @@ let a: boolean = false
 
 console.log(a)
 console.log(typeof a)
+
+// 4 - inference and annotation
+let ann: string = "teste"
+
+let inf = "teste"
+
+// ann = 1
+// inf = 1
