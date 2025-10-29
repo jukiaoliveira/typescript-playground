@@ -1,4 +1,3 @@
-"use strict";
 // 1 - numbers
 let x = 10;
 console.log(x);
@@ -20,3 +19,11 @@ console.log(typeof fullName);
 let a = false;
 console.log(a);
 console.log(typeof a);
+// 4 - inference and annotation
+let ann = "teste";
+let inf = "teste";
+// ann = 1
+// inf = 1
+console.log("Testando");
+export {};
+//# sourceMappingURL=index.js.map

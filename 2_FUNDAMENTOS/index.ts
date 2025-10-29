@@ -43,3 +43,5 @@ let inf = "teste"
 
 // ann = 1
 // inf = 1
+
+console.log("Testando")
