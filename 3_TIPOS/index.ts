@@ -151,3 +151,24 @@ const coordObj:Point = {
 }
 
 showCoords(coordObj)
+
+// 14 - interfaces vs type alies
+interface Person {
+    name: string
+}
+
+interface Person {
+    age: number
+}
+
+const somePerson: Person = { name: "Julia", age: 26 }
+
+console.log(somePerson)
+
+type personType = {
+    name: string
+}
+
+// type personType = {
+//     age: number
+// }
