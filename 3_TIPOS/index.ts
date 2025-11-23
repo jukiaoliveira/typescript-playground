@@ -49,3 +49,15 @@ function greeting(name: string): string {
 }
 
 console.log(greeting("Julia"))
+
+// 6 - função anonima
+
+setTimeout(function() {
+
+    const sallary: number = 1000
+
+    // console.log(parseFloat(sallary))
+
+    // console.log(sallary)
+
+}, 2000)

@@ -28,3 +28,9 @@ function greeting(name) {
     return `Olá ${name}`;
 }
 console.log(greeting("Julia"));
+// 6 - função anonima
+setTimeout(function () {
+    const sallary = 1000;
+    // console.log(parseFloat(sallary))
+    // console.log(sallary)
+}, 2000);
