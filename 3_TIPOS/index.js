@@ -17,3 +17,9 @@ const arr1 = [1, "teste", true, [], { nome: "Julia" }];
 console.log(arr1);
 arr1.push([1, 2, 3]);
 console.log(arr1);
+// 4 - parâmetros tipados
+function soma(a, b) {
+    console.log(a + b);
+}
+soma(4, 5);
+// soma("4", "5")
