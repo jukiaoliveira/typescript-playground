@@ -103,3 +103,30 @@ function advancedGreeting(firstName: string, lastName?: string) {
 
 console.log(advancedGreeting("Julia", "Oliveira"))
 console.log(advancedGreeting("Vitória"))
+
+// 10 - union type (exclusivo do typescript)
+
+function showBalance(balance: string | number) {
+    console.log(`O saldo da conta é R$${balance}`)
+}
+
+showBalance(100)
+showBalance("500")
+// showBalance(true)
+
+const arr2: Array<number | string | boolean> = [100, "teste", true]
+
+console.log(arr2)
+
+// 11 - avançando em union types
+
+function showUserRole(role: boolean | string) {
+    if(typeof role === "boolean") {
+        return "Usuário não aprovado!"
+    }
+
+    return `A função do usuário é: ${role}`
+}
+
+console.log(showUserRole(false))
+console.log(showUserRole("Admin"))
