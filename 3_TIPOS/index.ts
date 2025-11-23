@@ -88,3 +88,18 @@ function showNumbers(a: number, b: number, c: number) {
 
 showNumbers(1, 2, 3)
 // showNumbers(4, 5)
+
+// 9 - validando argumento opcional
+
+function advancedGreeting(firstName: string, lastName?: string) {
+
+    if(lastName !== undefined) {
+        return `Olá, ${firstName} ${lastName}, tudo bem?`
+    }
+
+    return `Olá, ${firstName}, tudo bem?`
+
+}
+
+console.log(advancedGreeting("Julia", "Oliveira"))
+console.log(advancedGreeting("Vitória"))
