@@ -23,7 +23,6 @@ console.log(nums)
 console.log(nums[0])
 
 // 3 - any
-
 const arr1: any = [1, "teste", true, [], { nome: "Julia" }]
 
 console.log(arr1)
@@ -33,7 +32,6 @@ arr1.push([1, 2, 3])
 console.log(arr1)
 
 // 4 - parâmetros tipados
-
 function soma(a: number, b: number) {
     console.log(a + b)
 }
@@ -43,7 +41,6 @@ soma(4, 5)
 // soma("4", "5")
 
 // 5 - retorno de função
-
 function greeting(name: string): string {
     return `Olá ${name}`
 }
@@ -51,7 +48,6 @@ function greeting(name: string): string {
 console.log(greeting("Julia"))
 
 // 6 - função anonima
-
 setTimeout(function() {
 
     const sallary: number = 1000
@@ -63,7 +59,6 @@ setTimeout(function() {
 }, 2000)
 
 // 7 - tipos de objeto
-
 function passCoordinates(coord: { x: number; y: number }) {
     console.log("X coordinates: " + coord.x)
     console.log("Y coordinates: " + coord.y)
@@ -77,7 +72,6 @@ passCoordinates(objCoord)
 const pessoaObj:{nome: string, surname: string} = {nome: "Julia", surname: "Oliveira"}
 
 // 8 - props opcionais
-
 function showNumbers(a: number, b: number, c: number) {
     console.log("A: " + a)
     console.log("B: " + b)
@@ -90,7 +84,6 @@ showNumbers(1, 2, 3)
 // showNumbers(4, 5)
 
 // 9 - validando argumento opcional
-
 function advancedGreeting(firstName: string, lastName?: string) {
 
     if(lastName !== undefined) {
@@ -105,7 +98,6 @@ console.log(advancedGreeting("Julia", "Oliveira"))
 console.log(advancedGreeting("Vitória"))
 
 // 10 - union type (exclusivo do typescript)
-
 function showBalance(balance: string | number) {
     console.log(`O saldo da conta é R$${balance}`)
 }
@@ -119,7 +111,6 @@ const arr2: Array<number | string | boolean> = [100, "teste", true]
 console.log(arr2)
 
 // 11 - avançando em union types
-
 function showUserRole(role: boolean | string) {
     if(typeof role === "boolean") {
         return "Usuário não aprovado!"
@@ -130,3 +121,14 @@ function showUserRole(role: boolean | string) {
 
 console.log(showUserRole(false))
 console.log(showUserRole("Admin"))
+
+// 12 - type alias
+type ID = number | string
+
+function showId(id: ID) {
+    console.log(`O ID é: ${id}`)
+}
+
+showId(1)
+showId("200")
+showId(123456)
