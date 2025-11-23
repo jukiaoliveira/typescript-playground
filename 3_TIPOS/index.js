@@ -1,9 +1,19 @@
+"use strict";
 // 1 - arrays
 let numbers = [1, 2, 3];
 numbers.push(5);
 console.log(numbers[2]);
 // numbers = "teste"
 const nomes = ["Julia", "Vitória"];
-export {};
-// nomes.push(3)
-//# sourceMappingURL=index.js.map
+// nomes.push(4)
+// 2 - outra sintaxe array
+const nums = [100, 200, 300];
+nums.push(400);
+console.log(nums);
+// nums.push("teste")
+console.log(nums[0]);
+// 3 - any
+const arr1 = [1, "teste", true, [], { nome: "Julia" }];
+console.log(arr1);
+arr1.push([1, 2, 3]);
+console.log(arr1);

@@ -9,4 +9,25 @@ console.log(numbers[2])
 
 const nomes: string[] = ["Julia", "Vitória"]
 
-// nomes.push(3)
+// nomes.push(4)
+
+// 2 - outra sintaxe array
+const nums: Array<number> = [100, 200, 300]
+
+nums.push(400)
+
+console.log(nums)
+
+// nums.push("teste")
+
+console.log(nums[0])
+
+// 3 - any
+
+const arr1: any = [1, "teste", true, [], { nome: "Julia" }]
+
+console.log(arr1)
+
+arr1.push([1, 2, 3])
+
+console.log(arr1)
