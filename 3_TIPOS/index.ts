@@ -187,3 +187,8 @@ function showDirection(direction: "left" | "right" | "center") {
 showDirection("center")
 
 // showDirection("top")
+
+// 16 - non null assertion operator ( ! ? )
+const p = document.getElementById("some-p")
+
+console.log(p!.innerText)
