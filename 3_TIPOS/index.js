@@ -23,3 +23,8 @@ function soma(a, b) {
 }
 soma(4, 5);
 // soma("4", "5")
+// 5 - retorno de função
+function greeting(name) {
+    return `Olá ${name}`;
+}
+console.log(greeting("Julia"));
