@@ -7,6 +7,9 @@ import FirstComponent from "./components/FirstComponent";
 import SecondComponent from "./components/SecondComponent";
 import Destructuring from "./components/Destructuring";
 
+// 6 - useState
+import State from "./components/State";
+
 function App() {
   // 1 - variáveis
   const name: string = "Júlia";
@@ -40,6 +43,7 @@ function App() {
         commentsQty={5}
         tags={["python"]}
       />
+      <State />
     </div>
   );
 }
